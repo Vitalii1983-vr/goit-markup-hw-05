@@ -77,7 +77,7 @@ img {
   position: relative;
 }
 
-::after {
+selected::after {
   content: '';
   position: absolute;
   left: 0;
