@@ -316,7 +316,8 @@
                 <img
                   src="./images/our-portfolio/banking-app.jpg"
                   alt="demonstration of various windows Menu Bank Applications"
-                  width="360" height="300"
+                  width="360"
+                  height="300"
                 />
                 <p class="cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -334,7 +335,8 @@
                 <img
                   src="./images/our-portfolio/cashless-payment.jpg"
                   alt="A phone scanning a QR code for cashless payment"
-                  width="360" height="300"
+                  width="360"
+                  height="300"
                 />
                 <p class="cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -353,7 +355,8 @@
                 <img
                   src="./images/our-portfolio/meditation-app.jpg"
                   alt="laptop and phone with the same image"
-                  width="360" height="300"
+                  width="360"
+                  height="300"
                 />
                 <p class="cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -371,7 +374,8 @@
                 <img
                   src="./images/our-portfolio/taxi-service.jpg"
                   alt="car interior with driver ready for travel"
-                  width="360" height="300"
+                  width="360"
+                  height="300"
                 />
                 <p class="cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -389,7 +393,8 @@
                 <img
                   src="./images/our-portfolio/screen-illustrations.jpg"
                   alt="beautiful pictures images of the moon on phone screens"
-                  width="360" height="300"
+                  width="360"
+                  height="300"
                 />
                 <p class="cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -407,7 +412,7 @@
                 <img
                   src="./images/our-portfolio/online-courses.jpg"
                   alt="Online-Courses"
-                  width="360" 
+                  width="360"
                 />
                 <p class="cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -473,8 +478,137 @@
             </li>
           </ul>
         </div>
+
+        <div class="subscribe-table">
+          <p class="table-title-footer">Subscribe</p>
+          <form class="form-table-footer">
+            <label class="label-table-footer">
+              <input
+                class="first-table"
+                type="email"
+                name="email-subscription"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="button-footer" type="submit">
+              Subscribe
+              <svg class="button-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-Frame-3"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+
+    <div class="model-overlay">
+      <div class="modal">
+        <button class="closing-button" type="button">
+          <svg class="icon-closing-button" width="8" height="8">
+            <use href="./images/icons.svg#icon-Vector-x"></use>
+          </svg>
+        </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+
+        <form class="form-table">
+          <div class="container-label">
+            <label class="title-label" for="user-name"> Name</label>
+            <div class="container-input">
+              <input
+                class="list-input"
+                id="user-name"
+                type="text"
+                name="user-name"
+                placeholder="Your name"
+              />
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="container-label">
+            <label class="title-label" for="user-fone"> Phone</label>
+            <div class="container-input">
+              <input
+                class="list-input"
+                id="user-fone"
+                type="tel"
+                name="user-phone"
+                placeholder="Your phone"
+              />
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-telephone"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="container-label">
+            <label class="title-label" for="user-email"> Email</label>
+            <div class="container-input">
+              <input
+                class="list-input"
+                id="user-email"
+                type="email"
+                name="user-email"
+                placeholder="Your email"
+              />
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-message"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="container-comment">
+            <label class="title-label" for="user-comment">Comment</label>
+            <textarea
+              class="table-comment"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+        </form>
+
+        <div class="container-checkbox">
+          <input
+            class="visually-hidden"
+            id="user-privacy"
+            type="checkbox"
+            name="user-privacy"
+            value="true"
+          />
+
+          <label class="title-checkbox" for="user-privacy">
+            <span class="title-checkbox-span">
+              <svg class="icon-checkbox" width="10" height="8">
+                <use href="./images/icons.svg#icon-Vector"></use>
+              </svg>
+            </span>
+            I accept the terms and conditions of the
+            <a class="message-privacy" href="">Privacy Policy</a>
+          </label>
+        </div>
+
+        <button class="order-service">Send</button>
+      </div>
+    </div>
+
     <!-- #endregion Footer -->
+
+    <script>
+      const modal = document.querySelector('.model-overlay');
+      const openModalBtn = document.querySelector('.hero-btn'); /* Кнопка, яка відкриває модалку */
+      const closeModalBtn = document.querySelector('.closing-button');
+    
+      openModalBtn.addEventListener('click', () => {
+        modal.classList.add('is-open');
+      });
+    
+      closeModalBtn.addEventListener('click', () => {
+        modal.classList.remove('is-open');
+      });
+    </script>
+    
   </body>
 </html>
